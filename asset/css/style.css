@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    z-index: 2;
+}
+header{
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    height: 60px;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+.nav-list{
+    text-decoration: none;
+    margin: 0 20px;
+    color: black;
+    font-size: 12px;
+    
+}
+
+.btn-sign-up{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #E87676;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+
+.btn-sign-up:hover{
+    color: #E87676;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #E87676;
+    border-radius: 12px;
+}
+
+.hero{
+    background-image: url('/asset/img/Background-hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.hero-child{
+    display: flex;
+    align-items: center;
+}
+
+.hero-child > p{
+    color: rgb(255, 255, 255);
+    width: 500px;
+    display: inline-block;
+    font-size: 25px;
+    
+}
+.hero-child > img{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.detail-1{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 0 20px  0 20px;
+    gap: 30px;
+    margin-bottom: 120px;
+}
+h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#content-img{
+    border-radius: 40px 0 40px 0;
+    margin-right:100px;
+}
+
+.content-detail {
+    display: flex;
+    gap: 20px;
+}
+
+.content-detail > img{
+    width: 20px;
+    height: 20px;
+}
+.content-detail > p{
+    width: 280px;
+    line-height: 24px;
+    color: #5E5B5B;
+    font-size: 13px;
+}
+
+.team {
+    margin-bottom: 100px;
+}
+.team h2{
+    margin-bottom: 70px;
+}
+
+.tengah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-team{
+    flex-direction: row;
+    gap: 30px;
+}
+
+.card-tengah{
+    padding: 20px;
+    gap: 30px;
+    border-radius: 20px;
+}
+
+.card-small img{
+    width: 200px;
+}
+
+footer{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    padding: 20px;
+    background-color: #010101;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+}
+
+.kotak-1{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #5E5B5B;
+}
+.rel{
+    position: relative;
+}
+
+.rel:hover > .kotak-1{
+    display: block;
+}
+
+.kotak-2{
+    
+    width: 200px;
+    height: 200px;
+    background-color: #cc0808;
+}
+input{
+    display: block;
+}
+.company > h3{
+    margin-bottom: 20px;
+}
+
+.company ul{
+    list-style:"- ";
+    padding: 0.5em;
+    & li{
+        margin-bottom: 6px;
+    }
+}
+
+.contact > h3{
+    margin-bottom: 20px;
+}
+
+.contact ul{
+    list-style:"- ";
+    padding: 0.5em;
+    & li{
+        margin-bottom: 6px;
+    }
+}
+
+.cp{
+    height: auto;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.kotak-3{
+    position: sticky;
+    top:200px;
+    left: 300px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(15, 155, 15, 0.733);
+}
+.kotak-4{
+    width: 200px;
+    z-index: 2;
+    height: 200px;
+    background-color: rgba(15, 38, 155, 0.733);
+}
+
+@media only screen and (max-width: 700px) {
+    header{
+        justify-content: center;
+    }
+    nav{
+        display: none;
+    }
+
+    header a{
+        display: none;
+    }
+    .detail-1{
+        flex-direction: column;
+    }
+}
